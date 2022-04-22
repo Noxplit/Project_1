@@ -1,12 +1,19 @@
-// const result = confirm('Are you here?')
-// const result2 = +prompt('Вам есть 18?', '10')
+const numbersOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '')
 
-// console.log(result2 + 5);
+const personalMovie = {
+  count: 2,
+  movie: {},
+  actors: {},
+  generes: [],
+  privat: false
+}
 
-const answers = [];
+const a = prompt('Один из последних просмотренных фильмов?');
+const b = prompt('На сколько оцените его?');
+const c = prompt('Один из последних просмотренных фильмов?');
+const d = prompt('На сколько оцените его?');
 
-answers[0] = prompt('Как ваше имя?' , '')
-answers[1] = prompt('Как ваша фамилия?' , '')
-answers[2] = prompt('Сколько вам лет?' , '')
+personalMovie.movie[a] = b;
+personalMovie.movie[c] = d;
 
-document.write(answers);
+console.log(personalMovie);
